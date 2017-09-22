@@ -29,7 +29,7 @@ class SwiftorTests: XCTestCase {
         XCTAssertEqual(distance, sqrt(50.0))
         
         XCTAssertEqual(dotProduct, 0.0)
-        XCTAssertEqualWithAccuracy(angle, .pi / 2, accuracy: 1.0e-5)
+        XCTAssertEqual(angle, .pi / 2, accuracy: 1.0e-5)
         
         XCTAssertEqual(unit, [1.0 / 3.0, 2.0 / 3.0, -2.0 / 3.0] as Vector3)
         
