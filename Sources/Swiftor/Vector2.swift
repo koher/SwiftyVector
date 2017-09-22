@@ -1,4 +1,4 @@
-public struct Vector2: Vector {
+public struct Vector2: Vector, Codable {
     public var x: Float
     public var y: Float
     
