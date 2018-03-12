@@ -43,8 +43,8 @@ class SwiftorTests: XCTestCase {
         
         #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
         // interoperability with CoreGraphics
-        let v = Vector2(cgPoint: CGPoint(x: 2, y: 3))
-        let p = v.cgPoint
+        let v = Vector2(CGPoint(x: 2.0, y: 3.0))
+        let p = CGPoint(v)
         
         XCTAssertEqual(v.x, 2.0)
         XCTAssertEqual(v.y, 3.0)
