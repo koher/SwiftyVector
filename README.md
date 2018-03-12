@@ -35,6 +35,12 @@ dependencies: [
 ]
 ```
 
+### Carthage
+
+```
+github "koher/swiftor" ~> 0.2.0
+```
+
 ## License
 
 MIT
