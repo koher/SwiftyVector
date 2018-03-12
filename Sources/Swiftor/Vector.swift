@@ -3,43 +3,43 @@ import Foundation
 public protocol Vector: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
     static func +(lhs: Self, rhs: Self) -> Self
     static func -(lhs: Self, rhs: Self) -> Self
-    static func *(lhs: Self, rhs: Float) -> Self
-    static func *(lhs: Float, rhs: Self) -> Self
-    static func /(lhs: Self, rhs: Float) -> Self
+    static func *(lhs: Self, rhs: Double) -> Self
+    static func *(lhs: Double, rhs: Self) -> Self
+    static func /(lhs: Self, rhs: Double) -> Self
     
-    var squareLength: Float { get }
-    var length: Float { get }
-    func squareDistance(from: Self) -> Float
-    func distance(from: Self) -> Float
+    var squareLength: Double { get }
+    var length: Double { get }
+    func squareDistance(from: Self) -> Double
+    func distance(from: Self) -> Double
     
     var unit: Self { get }
     
-    func dotProduct(with: Self) -> Float
+    func dotProduct(with: Self) -> Double
 
-    func cos(from: Self) -> Float
-    func angle(from: Self) -> Float
+    func cos(from: Self) -> Double
+    func angle(from: Self) -> Double
     
     static var zero: Self { get }
 }
 
 extension Vector {
-    public static func *(lhs: Float, rhs: Self) -> Self {
+    public static func *(lhs: Double, rhs: Self) -> Self {
         return rhs * lhs
     }
     
-    public var squareLength: Float {
+    public var squareLength: Double {
         return dotProduct(with: self)
     }
     
-    public var length: Float {
+    public var length: Double {
         return sqrt(squareLength)
     }
     
-    public func squareDistance(from vector: Self) -> Float {
+    public func squareDistance(from vector: Self) -> Double {
         return (self - vector).squareLength
     }
     
-    public func distance(from vector: Self) -> Float {
+    public func distance(from vector: Self) -> Double {
         return sqrt(squareDistance(from: vector))
     }
     
@@ -47,11 +47,11 @@ extension Vector {
         return self / length
     }
     
-    public func cos(from v: Self) -> Float {
+    public func cos(from v: Self) -> Double {
         return dotProduct(with: v) / sqrt(squareLength * v.squareLength)
     }
     
-    public func angle(from v: Self) -> Float {
+    public func angle(from v: Self) -> Double {
         let cosValue = cos(from: v)
         if cosValue < -1.0 {
             return .pi

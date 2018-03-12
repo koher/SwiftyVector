@@ -1,15 +1,15 @@
 public struct Vector3: Vector, Codable {
-    public var x: Float
-    public var y: Float
-    public var z: Float
+    public var x: Double
+    public var y: Double
+    public var z: Double
     
-    public init(x: Float, y: Float, z: Float) {
+    public init(x: Double, y: Double, z: Double) {
         self.x = x
         self.y = y
         self.z = z
     }
     
-    public func dotProduct(with v: Vector3) -> Float {
+    public func dotProduct(with v: Vector3) -> Double {
         return x * v.x + y * v.y + z * v.z
     }
     
@@ -32,11 +32,11 @@ public func -(lhs: Vector3, rhs: Vector3) -> Vector3 {
     return Vector3(x: lhs.x - rhs.x, y: lhs.y - rhs.y, z: lhs.z - rhs.z)
 }
 
-public func *(lhs: Vector3, rhs: Float) -> Vector3 {
+public func *(lhs: Vector3, rhs: Double) -> Vector3 {
     return Vector3(x: lhs.x * rhs, y: lhs.y * rhs, z: lhs.z * rhs)
 }
 
-public func /(lhs: Vector3, rhs: Float) -> Vector3 {
+public func /(lhs: Vector3, rhs: Double) -> Vector3 {
     return Vector3(x: lhs.x / rhs, y: lhs.y / rhs, z: lhs.z / rhs)
 }
 
@@ -45,7 +45,7 @@ public func ==(lhs: Vector3, rhs: Vector3) -> Bool {
 }
 
 extension Vector3: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: Float...) {
+    public init(arrayLiteral elements: Double...) {
         precondition(elements.count == 3)
         
         self.init(x: elements[0], y: elements[1], z: elements[2])

@@ -1,5 +1,8 @@
 import XCTest
 @testable import Swiftor
+#if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+import CoreGraphics
+#endif
 
 class SwiftorTests: XCTestCase {
     func testExample() {
@@ -37,6 +40,18 @@ class SwiftorTests: XCTestCase {
         print(distance)
         print(angle)
         print(unit)
+        
+        #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+        // interoperability with CoreGraphics
+        let v = Vector2(cgPoint: CGPoint(x: 2, y: 3))
+        let p = v.cgPoint
+        
+        XCTAssertEqual(v.x, 2.0)
+        XCTAssertEqual(v.y, 3.0)
+        XCTAssertEqual(p.x, 2.0)
+        XCTAssertEqual(p.y, 3.0)
+        #endif
+        
     }
 
     static var allTests : [(String, (SwiftorTests) -> () throws -> Void)] {

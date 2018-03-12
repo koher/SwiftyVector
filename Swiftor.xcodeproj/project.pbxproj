@@ -1,0 +1,1032 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D66A1D8A205674300021C59A /* Swiftor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66A1D80205674300021C59A /* Swiftor.framework */; };
+		D66A1DA3205675C70021C59A /* Swiftor.h in Headers */ = {isa = PBXBuildFile; fileRef = D66A1D9D205675C70021C59A /* Swiftor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D66A1DA4205675C70021C59A /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1D9E205675C70021C59A /* Vector.swift */; };
+		D66A1DA5205675C70021C59A /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1D9F205675C70021C59A /* Vector2.swift */; };
+		D66A1DA6205675C70021C59A /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DA0205675C70021C59A /* Vector3.swift */; };
+		D66A1DA7205675C70021C59A /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DA1205675C70021C59A /* Vector4.swift */; };
+		D66A1DAF205675D10021C59A /* SwiftorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DAC205675D10021C59A /* SwiftorTests.swift */; };
+		D66A1DBE205676D60021C59A /* Swiftor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66A1DB5205676D60021C59A /* Swiftor.framework */; };
+		D66A1DDA2056770A0021C59A /* Swiftor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66A1DD12056770A0021C59A /* Swiftor.framework */; };
+		D66A1DF52056795F0021C59A /* Swiftor.h in Headers */ = {isa = PBXBuildFile; fileRef = D66A1D9D205675C70021C59A /* Swiftor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D66A1DF62056795F0021C59A /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1D9E205675C70021C59A /* Vector.swift */; };
+		D66A1DF72056795F0021C59A /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1D9F205675C70021C59A /* Vector2.swift */; };
+		D66A1DF82056795F0021C59A /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DA0205675C70021C59A /* Vector3.swift */; };
+		D66A1DF92056795F0021C59A /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DA1205675C70021C59A /* Vector4.swift */; };
+		D66A1DFA205679600021C59A /* Swiftor.h in Headers */ = {isa = PBXBuildFile; fileRef = D66A1D9D205675C70021C59A /* Swiftor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D66A1DFB205679600021C59A /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1D9E205675C70021C59A /* Vector.swift */; };
+		D66A1DFC205679600021C59A /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1D9F205675C70021C59A /* Vector2.swift */; };
+		D66A1DFD205679600021C59A /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DA0205675C70021C59A /* Vector3.swift */; };
+		D66A1DFE205679600021C59A /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DA1205675C70021C59A /* Vector4.swift */; };
+		D66A1DFF205679600021C59A /* Swiftor.h in Headers */ = {isa = PBXBuildFile; fileRef = D66A1D9D205675C70021C59A /* Swiftor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D66A1E00205679600021C59A /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1D9E205675C70021C59A /* Vector.swift */; };
+		D66A1E01205679600021C59A /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1D9F205675C70021C59A /* Vector2.swift */; };
+		D66A1E02205679600021C59A /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DA0205675C70021C59A /* Vector3.swift */; };
+		D66A1E03205679600021C59A /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DA1205675C70021C59A /* Vector4.swift */; };
+		D66A1E04205679770021C59A /* SwiftorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DAC205675D10021C59A /* SwiftorTests.swift */; };
+		D66A1E05205679770021C59A /* SwiftorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DAC205675D10021C59A /* SwiftorTests.swift */; };
+		D66A1E0720567D8C0021C59A /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1E0620567D8C0021C59A /* CoreGraphics.swift */; };
+		D66A1E0820567D8C0021C59A /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1E0620567D8C0021C59A /* CoreGraphics.swift */; };
+		D66A1E0920567D8C0021C59A /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1E0620567D8C0021C59A /* CoreGraphics.swift */; };
+		D66A1E0A20567D8C0021C59A /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1E0620567D8C0021C59A /* CoreGraphics.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D66A1D8B205674300021C59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66A1D77205674300021C59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66A1D7F205674300021C59A;
+			remoteInfo = Swiftor;
+		};
+		D66A1DBF205676D60021C59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66A1D77205674300021C59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66A1DB4205676D60021C59A;
+			remoteInfo = "Swiftor-macOS";
+		};
+		D66A1DDB2056770A0021C59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66A1D77205674300021C59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66A1DD02056770A0021C59A;
+			remoteInfo = "Swiftor-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D66A1D80205674300021C59A /* Swiftor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swiftor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66A1D89205674300021C59A /* SwiftorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66A1D9C205675C70021C59A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66A1D9D205675C70021C59A /* Swiftor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swiftor.h; sourceTree = "<group>"; };
+		D66A1D9E205675C70021C59A /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		D66A1D9F205675C70021C59A /* Vector2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector2.swift; sourceTree = "<group>"; };
+		D66A1DA0205675C70021C59A /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		D66A1DA1205675C70021C59A /* Vector4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector4.swift; sourceTree = "<group>"; };
+		D66A1DA9205675D10021C59A /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		D66A1DAB205675D10021C59A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66A1DAC205675D10021C59A /* SwiftorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftorTests.swift; sourceTree = "<group>"; };
+		D66A1DB5205676D60021C59A /* Swiftor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swiftor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66A1DBD205676D60021C59A /* SwiftorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66A1DD12056770A0021C59A /* Swiftor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swiftor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66A1DD92056770A0021C59A /* SwiftorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66A1DED2056771A0021C59A /* Swiftor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swiftor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66A1E0620567D8C0021C59A /* CoreGraphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphics.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D66A1D7C205674300021C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1D86205674300021C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1D8A205674300021C59A /* Swiftor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DB1205676D60021C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DBA205676D60021C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1DBE205676D60021C59A /* Swiftor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DCD2056770A0021C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DD62056770A0021C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1DDA2056770A0021C59A /* Swiftor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DE92056771A0021C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D66A1D76205674300021C59A = {
+			isa = PBXGroup;
+			children = (
+				D66A1D9A205675C70021C59A /* Sources */,
+				D66A1DA8205675D10021C59A /* Tests */,
+				D66A1D81205674300021C59A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D66A1D81205674300021C59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D66A1D80205674300021C59A /* Swiftor.framework */,
+				D66A1D89205674300021C59A /* SwiftorTests.xctest */,
+				D66A1DB5205676D60021C59A /* Swiftor.framework */,
+				D66A1DBD205676D60021C59A /* SwiftorTests.xctest */,
+				D66A1DD12056770A0021C59A /* Swiftor.framework */,
+				D66A1DD92056770A0021C59A /* SwiftorTests.xctest */,
+				D66A1DED2056771A0021C59A /* Swiftor.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D66A1D9A205675C70021C59A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D66A1D9B205675C70021C59A /* Swiftor */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D66A1D9B205675C70021C59A /* Swiftor */ = {
+			isa = PBXGroup;
+			children = (
+				D66A1D9C205675C70021C59A /* Info.plist */,
+				D66A1D9D205675C70021C59A /* Swiftor.h */,
+				D66A1D9E205675C70021C59A /* Vector.swift */,
+				D66A1D9F205675C70021C59A /* Vector2.swift */,
+				D66A1DA0205675C70021C59A /* Vector3.swift */,
+				D66A1DA1205675C70021C59A /* Vector4.swift */,
+				D66A1E0620567D8C0021C59A /* CoreGraphics.swift */,
+			);
+			path = Swiftor;
+			sourceTree = "<group>";
+		};
+		D66A1DA8205675D10021C59A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D66A1DA9205675D10021C59A /* LinuxMain.swift */,
+				D66A1DAA205675D10021C59A /* SwiftorTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D66A1DAA205675D10021C59A /* SwiftorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D66A1DAB205675D10021C59A /* Info.plist */,
+				D66A1DAC205675D10021C59A /* SwiftorTests.swift */,
+			);
+			path = SwiftorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D66A1D7D205674300021C59A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1DA3205675C70021C59A /* Swiftor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DB2205676D60021C59A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1DF52056795F0021C59A /* Swiftor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DCE2056770A0021C59A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1DFA205679600021C59A /* Swiftor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DEA2056771A0021C59A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1DFF205679600021C59A /* Swiftor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D66A1D7F205674300021C59A /* Swiftor-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66A1D94205674300021C59A /* Build configuration list for PBXNativeTarget "Swiftor-iOS" */;
+			buildPhases = (
+				D66A1D7B205674300021C59A /* Sources */,
+				D66A1D7C205674300021C59A /* Frameworks */,
+				D66A1D7D205674300021C59A /* Headers */,
+				D66A1D7E205674300021C59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swiftor-iOS";
+			productName = Swiftor;
+			productReference = D66A1D80205674300021C59A /* Swiftor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D66A1D88205674300021C59A /* SwiftorTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66A1D97205674300021C59A /* Build configuration list for PBXNativeTarget "SwiftorTests-iOS" */;
+			buildPhases = (
+				D66A1D85205674300021C59A /* Sources */,
+				D66A1D86205674300021C59A /* Frameworks */,
+				D66A1D87205674300021C59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D66A1D8C205674300021C59A /* PBXTargetDependency */,
+			);
+			name = "SwiftorTests-iOS";
+			productName = SwiftorTests;
+			productReference = D66A1D89205674300021C59A /* SwiftorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D66A1DB4205676D60021C59A /* Swiftor-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66A1DC6205676D60021C59A /* Build configuration list for PBXNativeTarget "Swiftor-macOS" */;
+			buildPhases = (
+				D66A1DB0205676D60021C59A /* Sources */,
+				D66A1DB1205676D60021C59A /* Frameworks */,
+				D66A1DB2205676D60021C59A /* Headers */,
+				D66A1DB3205676D60021C59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swiftor-macOS";
+			productName = "Swiftor-macOS";
+			productReference = D66A1DB5205676D60021C59A /* Swiftor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D66A1DBC205676D60021C59A /* Swiftor-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66A1DC9205676D60021C59A /* Build configuration list for PBXNativeTarget "Swiftor-macOSTests" */;
+			buildPhases = (
+				D66A1DB9205676D60021C59A /* Sources */,
+				D66A1DBA205676D60021C59A /* Frameworks */,
+				D66A1DBB205676D60021C59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D66A1DC0205676D60021C59A /* PBXTargetDependency */,
+			);
+			name = "Swiftor-macOSTests";
+			productName = "Swiftor-macOSTests";
+			productReference = D66A1DBD205676D60021C59A /* SwiftorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D66A1DD02056770A0021C59A /* Swiftor-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66A1DE22056770A0021C59A /* Build configuration list for PBXNativeTarget "Swiftor-tvOS" */;
+			buildPhases = (
+				D66A1DCC2056770A0021C59A /* Sources */,
+				D66A1DCD2056770A0021C59A /* Frameworks */,
+				D66A1DCE2056770A0021C59A /* Headers */,
+				D66A1DCF2056770A0021C59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swiftor-tvOS";
+			productName = "Swiftor-tvOS";
+			productReference = D66A1DD12056770A0021C59A /* Swiftor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D66A1DD82056770A0021C59A /* Swiftor-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66A1DE52056770A0021C59A /* Build configuration list for PBXNativeTarget "Swiftor-tvOSTests" */;
+			buildPhases = (
+				D66A1DD52056770A0021C59A /* Sources */,
+				D66A1DD62056770A0021C59A /* Frameworks */,
+				D66A1DD72056770A0021C59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D66A1DDC2056770A0021C59A /* PBXTargetDependency */,
+			);
+			name = "Swiftor-tvOSTests";
+			productName = "Swiftor-tvOSTests";
+			productReference = D66A1DD92056770A0021C59A /* SwiftorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D66A1DEC2056771A0021C59A /* Swiftor-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66A1DF22056771A0021C59A /* Build configuration list for PBXNativeTarget "Swiftor-watchOS" */;
+			buildPhases = (
+				D66A1DE82056771A0021C59A /* Sources */,
+				D66A1DE92056771A0021C59A /* Frameworks */,
+				D66A1DEA2056771A0021C59A /* Headers */,
+				D66A1DEB2056771A0021C59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swiftor-watchOS";
+			productName = "Swiftor-watchOS";
+			productReference = D66A1DED2056771A0021C59A /* Swiftor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D66A1D77205674300021C59A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = koherent.org;
+				TargetAttributes = {
+					D66A1D7F205674300021C59A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D66A1D88205674300021C59A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D66A1DB4205676D60021C59A = {
+						CreatedOnToolsVersion = 9.2;
+					};
+					D66A1DBC205676D60021C59A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D66A1DD02056770A0021C59A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D66A1DD82056770A0021C59A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D66A1DEC2056771A0021C59A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D66A1D7A205674300021C59A /* Build configuration list for PBXProject "Swiftor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D66A1D76205674300021C59A;
+			productRefGroup = D66A1D81205674300021C59A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D66A1D7F205674300021C59A /* Swiftor-iOS */,
+				D66A1D88205674300021C59A /* SwiftorTests-iOS */,
+				D66A1DB4205676D60021C59A /* Swiftor-macOS */,
+				D66A1DBC205676D60021C59A /* Swiftor-macOSTests */,
+				D66A1DD02056770A0021C59A /* Swiftor-tvOS */,
+				D66A1DD82056770A0021C59A /* Swiftor-tvOSTests */,
+				D66A1DEC2056771A0021C59A /* Swiftor-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D66A1D7E205674300021C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1D87205674300021C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DB3205676D60021C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DBB205676D60021C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DCF2056770A0021C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DD72056770A0021C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DEB2056771A0021C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D66A1D7B205674300021C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1E0720567D8C0021C59A /* CoreGraphics.swift in Sources */,
+				D66A1DA4205675C70021C59A /* Vector.swift in Sources */,
+				D66A1DA6205675C70021C59A /* Vector3.swift in Sources */,
+				D66A1DA5205675C70021C59A /* Vector2.swift in Sources */,
+				D66A1DA7205675C70021C59A /* Vector4.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1D85205674300021C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1DAF205675D10021C59A /* SwiftorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DB0205676D60021C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1E0820567D8C0021C59A /* CoreGraphics.swift in Sources */,
+				D66A1DF62056795F0021C59A /* Vector.swift in Sources */,
+				D66A1DF82056795F0021C59A /* Vector3.swift in Sources */,
+				D66A1DF72056795F0021C59A /* Vector2.swift in Sources */,
+				D66A1DF92056795F0021C59A /* Vector4.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DB9205676D60021C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1E04205679770021C59A /* SwiftorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DCC2056770A0021C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1E0920567D8C0021C59A /* CoreGraphics.swift in Sources */,
+				D66A1DFB205679600021C59A /* Vector.swift in Sources */,
+				D66A1DFD205679600021C59A /* Vector3.swift in Sources */,
+				D66A1DFC205679600021C59A /* Vector2.swift in Sources */,
+				D66A1DFE205679600021C59A /* Vector4.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DD52056770A0021C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1E05205679770021C59A /* SwiftorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A1DE82056771A0021C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66A1E0A20567D8C0021C59A /* CoreGraphics.swift in Sources */,
+				D66A1E00205679600021C59A /* Vector.swift in Sources */,
+				D66A1E02205679600021C59A /* Vector3.swift in Sources */,
+				D66A1E01205679600021C59A /* Vector2.swift in Sources */,
+				D66A1E03205679600021C59A /* Vector4.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D66A1D8C205674300021C59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66A1D7F205674300021C59A /* Swiftor-iOS */;
+			targetProxy = D66A1D8B205674300021C59A /* PBXContainerItemProxy */;
+		};
+		D66A1DC0205676D60021C59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66A1DB4205676D60021C59A /* Swiftor-macOS */;
+			targetProxy = D66A1DBF205676D60021C59A /* PBXContainerItemProxy */;
+		};
+		D66A1DDC2056770A0021C59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66A1DD02056770A0021C59A /* Swiftor-tvOS */;
+			targetProxy = D66A1DDB2056770A0021C59A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D66A1D92205674300021C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D66A1D93205674300021C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D66A1D95205674300021C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Swiftor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.Swiftor;
+				PRODUCT_NAME = Swiftor;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D66A1D96205674300021C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Swiftor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.Swiftor;
+				PRODUCT_NAME = Swiftor;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D66A1D98205674300021C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/SwiftorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.SwiftorTests;
+				PRODUCT_NAME = SwiftorTests;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D66A1D99205674300021C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/SwiftorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.SwiftorTests;
+				PRODUCT_NAME = SwiftorTests;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D66A1DC7205676D60021C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Swiftor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.Swiftor;
+				PRODUCT_NAME = Swiftor;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D66A1DC8205676D60021C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Swiftor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.Swiftor;
+				PRODUCT_NAME = Swiftor;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		D66A1DCA205676D60021C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/SwiftorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.SwiftorTests;
+				PRODUCT_NAME = SwiftorTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D66A1DCB205676D60021C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/SwiftorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.SwiftorTests;
+				PRODUCT_NAME = SwiftorTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		D66A1DE32056770A0021C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Swiftor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.Swiftor;
+				PRODUCT_NAME = Swiftor;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		D66A1DE42056770A0021C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Swiftor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.Swiftor;
+				PRODUCT_NAME = Swiftor;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		D66A1DE62056770A0021C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/SwiftorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.SwiftorTests;
+				PRODUCT_NAME = SwiftorTests;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		D66A1DE72056770A0021C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/SwiftorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.SwiftorTests;
+				PRODUCT_NAME = SwiftorTests;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		D66A1DF32056771A0021C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Swiftor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.Swiftor;
+				PRODUCT_NAME = Swiftor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		D66A1DF42056771A0021C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Swiftor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.Swiftor;
+				PRODUCT_NAME = Swiftor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D66A1D7A205674300021C59A /* Build configuration list for PBXProject "Swiftor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66A1D92205674300021C59A /* Debug */,
+				D66A1D93205674300021C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66A1D94205674300021C59A /* Build configuration list for PBXNativeTarget "Swiftor-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66A1D95205674300021C59A /* Debug */,
+				D66A1D96205674300021C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66A1D97205674300021C59A /* Build configuration list for PBXNativeTarget "SwiftorTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66A1D98205674300021C59A /* Debug */,
+				D66A1D99205674300021C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66A1DC6205676D60021C59A /* Build configuration list for PBXNativeTarget "Swiftor-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66A1DC7205676D60021C59A /* Debug */,
+				D66A1DC8205676D60021C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66A1DC9205676D60021C59A /* Build configuration list for PBXNativeTarget "Swiftor-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66A1DCA205676D60021C59A /* Debug */,
+				D66A1DCB205676D60021C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66A1DE22056770A0021C59A /* Build configuration list for PBXNativeTarget "Swiftor-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66A1DE32056770A0021C59A /* Debug */,
+				D66A1DE42056770A0021C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66A1DE52056770A0021C59A /* Build configuration list for PBXNativeTarget "Swiftor-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66A1DE62056770A0021C59A /* Debug */,
+				D66A1DE72056770A0021C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66A1DF22056771A0021C59A /* Build configuration list for PBXNativeTarget "Swiftor-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66A1DF32056771A0021C59A /* Debug */,
+				D66A1DF42056771A0021C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D66A1D77205674300021C59A /* Project object */;
+}
