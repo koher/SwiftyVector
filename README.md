@@ -19,6 +19,10 @@ let angle      = a.angle(from: b)      // 1.5708
 
 let c: Vector3 = [1.0, 2.0, -2.0]
 let unit       = c.unit                // [0.333333, 0.666667, -0.666667]
+
+// interoperability with CoreGraphics
+let v = Vector2(cgPoint: CGPoint(x: 2, y: 3))
+let p = v.cgPoint
 ```
 
 ## Installation
