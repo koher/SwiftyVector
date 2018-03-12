@@ -33,6 +33,10 @@
 		D66A1E03205679600021C59A /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DA1205675C70021C59A /* Vector4.swift */; };
 		D66A1E04205679770021C59A /* SwiftorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DAC205675D10021C59A /* SwiftorTests.swift */; };
 		D66A1E05205679770021C59A /* SwiftorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1DAC205675D10021C59A /* SwiftorTests.swift */; };
+		D66A1E0720567D8C0021C59A /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1E0620567D8C0021C59A /* CoreGraphics.swift */; };
+		D66A1E0820567D8C0021C59A /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1E0620567D8C0021C59A /* CoreGraphics.swift */; };
+		D66A1E0920567D8C0021C59A /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1E0620567D8C0021C59A /* CoreGraphics.swift */; };
+		D66A1E0A20567D8C0021C59A /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A1E0620567D8C0021C59A /* CoreGraphics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,7 @@
 		D66A1DD12056770A0021C59A /* Swiftor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swiftor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66A1DD92056770A0021C59A /* SwiftorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66A1DED2056771A0021C59A /* Swiftor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swiftor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66A1E0620567D8C0021C59A /* CoreGraphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +179,7 @@
 				D66A1D9F205675C70021C59A /* Vector2.swift */,
 				D66A1DA0205675C70021C59A /* Vector3.swift */,
 				D66A1DA1205675C70021C59A /* Vector4.swift */,
+				D66A1E0620567D8C0021C59A /* CoreGraphics.swift */,
 			);
 			path = Swiftor;
 			sourceTree = "<group>";
@@ -479,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66A1E0720567D8C0021C59A /* CoreGraphics.swift in Sources */,
 				D66A1DA4205675C70021C59A /* Vector.swift in Sources */,
 				D66A1DA6205675C70021C59A /* Vector3.swift in Sources */,
 				D66A1DA5205675C70021C59A /* Vector2.swift in Sources */,
@@ -498,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66A1E0820567D8C0021C59A /* CoreGraphics.swift in Sources */,
 				D66A1DF62056795F0021C59A /* Vector.swift in Sources */,
 				D66A1DF82056795F0021C59A /* Vector3.swift in Sources */,
 				D66A1DF72056795F0021C59A /* Vector2.swift in Sources */,
@@ -517,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66A1E0920567D8C0021C59A /* CoreGraphics.swift in Sources */,
 				D66A1DFB205679600021C59A /* Vector.swift in Sources */,
 				D66A1DFD205679600021C59A /* Vector3.swift in Sources */,
 				D66A1DFC205679600021C59A /* Vector2.swift in Sources */,
@@ -536,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66A1E0A20567D8C0021C59A /* CoreGraphics.swift in Sources */,
 				D66A1E00205679600021C59A /* Vector.swift in Sources */,
 				D66A1E02205679600021C59A /* Vector3.swift in Sources */,
 				D66A1E01205679600021C59A /* Vector2.swift in Sources */,
