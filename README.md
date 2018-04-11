@@ -53,14 +53,14 @@ let angle      = a.angle(from: b)      // 1.5708
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/koher/SwiftyVector.git", .branch("dev-0.3")),
+    .package(url: "https://github.com/koher/SwiftyVector.git", from: "0.3.0"),
 ]
 ```
 
 ### Carthage
 
 ```
-github "koher/SwiftyVector" "dev-0.3"
+github "koher/SwiftyVector" ~> 0.3.0
 ```
 
 ## License
