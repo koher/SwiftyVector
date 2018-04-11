@@ -71,6 +71,12 @@ class ConcreteTests : XCTestCase {
         XCTAssertEqual(a.dotProduct(with: b), 112)
     }
     
+    func testCrossProduct() {
+        let a: Vector3 = [2, 3, 5]
+        let b: Vector3 = [7, 11, 13]
+        XCTAssertEqual(a.crossProduct(with: b), [-16, 9, 1])
+    }
+    
     func testAngle() {
         let a: Vector2 = [sqrt(3), 1]
         let b: Vector2 = [3, 3 * sqrt(3)]

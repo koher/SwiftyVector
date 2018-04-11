@@ -324,6 +324,14 @@ extension Vector3f {
             + y * v.y
             + z * v.z
     }
+
+    public func crossProduct(with v: Vector3f) -> Vector3f {
+        return Vector3f(
+            x: y * v.z - z * v.y,
+            y: z * v.x - x * v.z,
+            z: x * v.y - y * v.x
+        )
+    }
     
     public static let zero: Vector3f = Vector3f(
         x: 0,
@@ -445,6 +453,14 @@ extension Vector3 {
         return x * v.x
             + y * v.y
             + z * v.z
+    }
+
+    public func crossProduct(with v: Vector3) -> Vector3 {
+        return Vector3(
+            x: y * v.z - z * v.y,
+            y: z * v.x - x * v.z,
+            z: x * v.y - y * v.x
+        )
     }
     
     public static let zero: Vector3 = Vector3(

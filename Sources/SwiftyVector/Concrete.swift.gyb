@@ -138,6 +138,17 @@ extension Vector${dimension}${symbol} {
 %       end
 %     end
     }
+%
+%     if dimension == '3':
+
+    public func crossProduct(with v: Vector3${symbol}) -> Vector3${symbol} {
+        return Vector3${symbol}(
+            x: y * v.z - z * v.y,
+            y: z * v.x - x * v.z,
+            z: x * v.y - y * v.x
+        )
+    }
+%     end
     
     public static let zero: Vector${dimension}${symbol} = Vector${dimension}${symbol}(
 %     for i, element in enumerate(elements):
