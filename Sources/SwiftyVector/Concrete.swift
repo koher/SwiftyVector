@@ -7,30 +7,9 @@ public typealias Vector2f = vector_float2
 
 extension Vector2f: Vector {}
 
-extension Vector2f: Codable {
-    private enum CodingKeys: CodingKey {
-        case x
-        case y
-    }
-    
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(
-            x: try container.decode(Float.self, forKey: .x),
-            y: try container.decode(Float.self, forKey: .y)
-        )
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(x, forKey: .x)
-        try container.encode(y, forKey: .y)
-    }
-}
-
 #else
 
-public struct Vector2f: Vector, Codable {
+public struct Vector2f: Vector {
     public var x: Float
     public var y: Float
     
@@ -115,30 +94,9 @@ public typealias Vector2 = vector_double2
 
 extension Vector2: Vector {}
 
-extension Vector2: Codable {
-    private enum CodingKeys: CodingKey {
-        case x
-        case y
-    }
-    
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(
-            x: try container.decode(Double.self, forKey: .x),
-            y: try container.decode(Double.self, forKey: .y)
-        )
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(x, forKey: .x)
-        try container.encode(y, forKey: .y)
-    }
-}
-
 #else
 
-public struct Vector2: Vector, Codable {
+public struct Vector2: Vector {
     public var x: Double
     public var y: Double
     
@@ -223,33 +181,9 @@ public typealias Vector3f = vector_float3
 
 extension Vector3f: Vector {}
 
-extension Vector3f: Codable {
-    private enum CodingKeys: CodingKey {
-        case x
-        case y
-        case z
-    }
-    
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(
-            x: try container.decode(Float.self, forKey: .x),
-            y: try container.decode(Float.self, forKey: .y),
-            z: try container.decode(Float.self, forKey: .z)
-        )
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(x, forKey: .x)
-        try container.encode(y, forKey: .y)
-        try container.encode(z, forKey: .z)
-    }
-}
-
 #else
 
-public struct Vector3f: Vector, Codable {
+public struct Vector3f: Vector {
     public var x: Float
     public var y: Float
     public var z: Float
@@ -353,33 +287,9 @@ public typealias Vector3 = vector_double3
 
 extension Vector3: Vector {}
 
-extension Vector3: Codable {
-    private enum CodingKeys: CodingKey {
-        case x
-        case y
-        case z
-    }
-    
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(
-            x: try container.decode(Double.self, forKey: .x),
-            y: try container.decode(Double.self, forKey: .y),
-            z: try container.decode(Double.self, forKey: .z)
-        )
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(x, forKey: .x)
-        try container.encode(y, forKey: .y)
-        try container.encode(z, forKey: .z)
-    }
-}
-
 #else
 
-public struct Vector3: Vector, Codable {
+public struct Vector3: Vector {
     public var x: Double
     public var y: Double
     public var z: Double
@@ -483,36 +393,9 @@ public typealias Vector4f = vector_float4
 
 extension Vector4f: Vector {}
 
-extension Vector4f: Codable {
-    private enum CodingKeys: CodingKey {
-        case x
-        case y
-        case z
-        case w
-    }
-    
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(
-            x: try container.decode(Float.self, forKey: .x),
-            y: try container.decode(Float.self, forKey: .y),
-            z: try container.decode(Float.self, forKey: .z),
-            w: try container.decode(Float.self, forKey: .w)
-        )
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(x, forKey: .x)
-        try container.encode(y, forKey: .y)
-        try container.encode(z, forKey: .z)
-        try container.encode(w, forKey: .w)
-    }
-}
-
 #else
 
-public struct Vector4f: Vector, Codable {
+public struct Vector4f: Vector {
     public var x: Float
     public var y: Float
     public var z: Float
@@ -619,36 +502,9 @@ public typealias Vector4 = vector_double4
 
 extension Vector4: Vector {}
 
-extension Vector4: Codable {
-    private enum CodingKeys: CodingKey {
-        case x
-        case y
-        case z
-        case w
-    }
-    
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(
-            x: try container.decode(Double.self, forKey: .x),
-            y: try container.decode(Double.self, forKey: .y),
-            z: try container.decode(Double.self, forKey: .z),
-            w: try container.decode(Double.self, forKey: .w)
-        )
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(x, forKey: .x)
-        try container.encode(y, forKey: .y)
-        try container.encode(z, forKey: .z)
-        try container.encode(w, forKey: .w)
-    }
-}
-
 #else
 
-public struct Vector4: Vector, Codable {
+public struct Vector4: Vector {
     public var x: Double
     public var y: Double
     public var z: Double
