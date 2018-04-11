@@ -22,34 +22,9 @@ public typealias Vector${dimension}${symbol} = ${simd_type_prefix}${dimension}
 
 extension Vector${dimension}${symbol}: Vector {}
 
-extension Vector${dimension}${symbol}: Codable {
-    private enum CodingKeys: CodingKey {
-%     for element in elements:
-        case ${element}
-%     end
-    }
-    
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(
-%     for i, element in enumerate(elements):
-%       has_comma = i < len(elements) - 1
-            ${element}: try container.decode(${scalar_type}.self, forKey: .${element})${',' if has_comma else ''}
-%     end
-        )
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-%     for element in elements:
-        try container.encode(${element}, forKey: .${element})
-%     end
-    }
-}
-
 #else
 
-public struct Vector${dimension}${symbol}: Vector, Codable {
+public struct Vector${dimension}${symbol}: Vector {
 %     for element in elements:
     public var ${element}: ${scalar_type}
 %     end
