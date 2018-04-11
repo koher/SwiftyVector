@@ -8,25 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D63875FC207DA7E400582FBA /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F1207DA7D600582FBA /* CoreGraphics.swift */; };
-		D63875FD207DA7E400582FBA /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F2207DA7D600582FBA /* Vector2.swift */; };
 		D63875FE207DA7E400582FBA /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F3207DA7D600582FBA /* Vector.swift */; };
-		D63875FF207DA7E400582FBA /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F4207DA7D600582FBA /* Vector4.swift */; };
-		D6387600207DA7E400582FBA /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F5207DA7D600582FBA /* Vector3.swift */; };
 		D6387601207DA7E400582FBA /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F1207DA7D600582FBA /* CoreGraphics.swift */; };
-		D6387602207DA7E400582FBA /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F2207DA7D600582FBA /* Vector2.swift */; };
 		D6387603207DA7E400582FBA /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F3207DA7D600582FBA /* Vector.swift */; };
-		D6387604207DA7E400582FBA /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F4207DA7D600582FBA /* Vector4.swift */; };
-		D6387605207DA7E400582FBA /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F5207DA7D600582FBA /* Vector3.swift */; };
 		D6387606207DA7E500582FBA /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F1207DA7D600582FBA /* CoreGraphics.swift */; };
-		D6387607207DA7E500582FBA /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F2207DA7D600582FBA /* Vector2.swift */; };
 		D6387608207DA7E500582FBA /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F3207DA7D600582FBA /* Vector.swift */; };
-		D6387609207DA7E500582FBA /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F4207DA7D600582FBA /* Vector4.swift */; };
-		D638760A207DA7E500582FBA /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F5207DA7D600582FBA /* Vector3.swift */; };
 		D638760B207DA7E600582FBA /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F1207DA7D600582FBA /* CoreGraphics.swift */; };
-		D638760C207DA7E600582FBA /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F2207DA7D600582FBA /* Vector2.swift */; };
 		D638760D207DA7E600582FBA /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F3207DA7D600582FBA /* Vector.swift */; };
-		D638760E207DA7E600582FBA /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F4207DA7D600582FBA /* Vector4.swift */; };
-		D638760F207DA7E600582FBA /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875F5207DA7D600582FBA /* Vector3.swift */; };
 		D6387610207DA7ED00582FBA /* SwiftyVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875FA207DA7D600582FBA /* SwiftyVectorTests.swift */; };
 		D6387611207DA7EE00582FBA /* SwiftyVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875FA207DA7D600582FBA /* SwiftyVectorTests.swift */; };
 		D6387612207DA7EE00582FBA /* SwiftyVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63875FA207DA7D600582FBA /* SwiftyVectorTests.swift */; };
@@ -34,6 +22,10 @@
 		D6387614207DA83F00582FBA /* SwiftyVector.h in Headers */ = {isa = PBXBuildFile; fileRef = D63875F0207DA7D600582FBA /* SwiftyVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6387615207DA84000582FBA /* SwiftyVector.h in Headers */ = {isa = PBXBuildFile; fileRef = D63875F0207DA7D600582FBA /* SwiftyVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6387616207DA84100582FBA /* SwiftyVector.h in Headers */ = {isa = PBXBuildFile; fileRef = D63875F0207DA7D600582FBA /* SwiftyVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6387618207DB40D00582FBA /* Concrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6387617207DB40D00582FBA /* Concrete.swift */; };
+		D6387619207DB40D00582FBA /* Concrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6387617207DB40D00582FBA /* Concrete.swift */; };
+		D638761A207DB40D00582FBA /* Concrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6387617207DB40D00582FBA /* Concrete.swift */; };
+		D638761B207DB40D00582FBA /* Concrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6387617207DB40D00582FBA /* Concrete.swift */; };
 		D66A1D8A205674300021C59A /* SwiftyVector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66A1D80205674300021C59A /* SwiftyVector.framework */; };
 		D66A1DBE205676D60021C59A /* SwiftyVector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66A1DB5205676D60021C59A /* SwiftyVector.framework */; };
 		D66A1DDA2056770A0021C59A /* SwiftyVector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66A1DD12056770A0021C59A /* SwiftyVector.framework */; };
@@ -66,14 +58,12 @@
 /* Begin PBXFileReference section */
 		D63875F0207DA7D600582FBA /* SwiftyVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyVector.h; sourceTree = "<group>"; };
 		D63875F1207DA7D600582FBA /* CoreGraphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphics.swift; sourceTree = "<group>"; };
-		D63875F2207DA7D600582FBA /* Vector2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2.swift; sourceTree = "<group>"; };
 		D63875F3207DA7D600582FBA /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
-		D63875F4207DA7D600582FBA /* Vector4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector4.swift; sourceTree = "<group>"; };
-		D63875F5207DA7D600582FBA /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
 		D63875F6207DA7D600582FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63875F8207DA7D600582FBA /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		D63875FA207DA7D600582FBA /* SwiftyVectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyVectorTests.swift; sourceTree = "<group>"; };
 		D63875FB207DA7D600582FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6387617207DB40D00582FBA /* Concrete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concrete.swift; sourceTree = "<group>"; };
 		D66A1D80205674300021C59A /* SwiftyVector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyVector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66A1D89205674300021C59A /* SwiftyVectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyVectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66A1DB5205676D60021C59A /* SwiftyVector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyVector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,12 +140,10 @@
 		D63875EF207DA7D600582FBA /* SwiftyVector */ = {
 			isa = PBXGroup;
 			children = (
+				D6387617207DB40D00582FBA /* Concrete.swift */,
 				D63875F1207DA7D600582FBA /* CoreGraphics.swift */,
 				D63875F0207DA7D600582FBA /* SwiftyVector.h */,
 				D63875F3207DA7D600582FBA /* Vector.swift */,
-				D63875F2207DA7D600582FBA /* Vector2.swift */,
-				D63875F5207DA7D600582FBA /* Vector3.swift */,
-				D63875F4207DA7D600582FBA /* Vector4.swift */,
 				D63875F6207DA7D600582FBA /* Info.plist */,
 			);
 			path = SwiftyVector;
@@ -487,9 +475,7 @@
 			files = (
 				D63875FC207DA7E400582FBA /* CoreGraphics.swift in Sources */,
 				D63875FE207DA7E400582FBA /* Vector.swift in Sources */,
-				D63875FD207DA7E400582FBA /* Vector2.swift in Sources */,
-				D6387600207DA7E400582FBA /* Vector3.swift in Sources */,
-				D63875FF207DA7E400582FBA /* Vector4.swift in Sources */,
+				D6387618207DB40D00582FBA /* Concrete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,9 +493,7 @@
 			files = (
 				D6387601207DA7E400582FBA /* CoreGraphics.swift in Sources */,
 				D6387603207DA7E400582FBA /* Vector.swift in Sources */,
-				D6387602207DA7E400582FBA /* Vector2.swift in Sources */,
-				D6387605207DA7E400582FBA /* Vector3.swift in Sources */,
-				D6387604207DA7E400582FBA /* Vector4.swift in Sources */,
+				D6387619207DB40D00582FBA /* Concrete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,9 +511,7 @@
 			files = (
 				D6387606207DA7E500582FBA /* CoreGraphics.swift in Sources */,
 				D6387608207DA7E500582FBA /* Vector.swift in Sources */,
-				D6387607207DA7E500582FBA /* Vector2.swift in Sources */,
-				D638760A207DA7E500582FBA /* Vector3.swift in Sources */,
-				D6387609207DA7E500582FBA /* Vector4.swift in Sources */,
+				D638761A207DB40D00582FBA /* Concrete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,9 +529,7 @@
 			files = (
 				D638760B207DA7E600582FBA /* CoreGraphics.swift in Sources */,
 				D638760D207DA7E600582FBA /* Vector.swift in Sources */,
-				D638760C207DA7E600582FBA /* Vector2.swift in Sources */,
-				D638760F207DA7E600582FBA /* Vector3.swift in Sources */,
-				D638760E207DA7E600582FBA /* Vector4.swift in Sources */,
+				D638761B207DB40D00582FBA /* Concrete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
