@@ -2,6 +2,7 @@
 /.build
 /Packages
 /*.xcodeproj/project.xcworkspace/xcuserdata
+/*.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 /*.xcodeproj/xcuserdata
 /Carthage
 

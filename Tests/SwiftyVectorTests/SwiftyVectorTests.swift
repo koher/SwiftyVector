@@ -1,10 +1,10 @@
 import XCTest
-@testable import Swiftor
+@testable import SwiftyVector
 #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 import CoreGraphics
 #endif
 
-class SwiftorTests: XCTestCase {
+class SwiftyVectorTests: XCTestCase {
     func testExample() {
         let a: Vector2 = [2.0, 1.0]
         let b: Vector2 = [-3.0, 6.0]
@@ -54,7 +54,7 @@ class SwiftorTests: XCTestCase {
         
     }
 
-    static var allTests : [(String, (SwiftorTests) -> () throws -> Void)] {
+    static var allTests : [(String, (SwiftyVectorTests) -> () throws -> Void)] {
         return [
             ("testExample", testExample),
         ]

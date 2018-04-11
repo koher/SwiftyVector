@@ -1,6 +1,6 @@
-# Swiftor
+# SwiftyVector
 
-*Swiftor* provides vector types for Swift.
+*SwiftyVector* provides vector types for Swift.
 
 ```swift
 let a: Vector2 = [2.0, 1.0]
@@ -31,14 +31,14 @@ let p = CGPoint(v)
 
 ```swift
 dependencies: [
-    .Package(url: "https://github.com/koher/swiftor.git", majorVersion: 0),
+    .package(url: "https://github.com/koher/SwiftyVector.git", .branch("dev-0.3")),
 ]
 ```
 
 ### Carthage
 
 ```
-github "koher/swiftor" ~> 0.2.0
+github "koher/SwiftyVector" "dev-0.3"
 ```
 
 ## License
