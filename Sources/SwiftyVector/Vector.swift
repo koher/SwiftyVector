@@ -9,6 +9,14 @@ public protocol Vector: Equatable, CustomStringConvertible, CustomDebugStringCon
     static func *(lhs: Scalar, rhs: Self) -> Self
     static func /(lhs: Self, rhs: Scalar) -> Self
     
+    static prefix func +(value: Self) -> Self
+    static prefix func -(value: Self) -> Self
+    
+    static func +=(lhs: inout Self, rhs: Self)
+    static func -=(lhs: inout Self, rhs: Self)
+    static func *=(lhs: inout Self, rhs: Scalar)
+    static func /=(lhs: inout Self, rhs: Scalar)
+
     var squareLength: Scalar { get }
     var length: Scalar { get }
     func squareDistance(from: Self) -> Scalar
@@ -29,6 +37,30 @@ extension Vector where Scalar : FloatingPoint {
         return rhs * lhs
     }
     
+    public static prefix func +(value: Self) -> Self {
+        return value
+    }
+    
+    public static prefix func -(value: Self) -> Self {
+        return value * -1
+    }
+    
+    public static func +=(lhs: inout Self, rhs: Self) {
+        lhs = lhs + rhs
+    }
+    
+    public static func -=(lhs: inout Self, rhs: Self) {
+        lhs = lhs - rhs
+    }
+    
+    public static func *=(lhs: inout Self, rhs: Scalar) {
+        lhs = lhs * rhs
+    }
+    
+    public static func /=(lhs: inout Self, rhs: Scalar) {
+        lhs = lhs / rhs
+    }
+
     public var squareLength: Scalar {
         return dotProduct(with: self)
     }

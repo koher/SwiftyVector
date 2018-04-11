@@ -5,28 +5,46 @@ private let epsilon = 1.0e-10
 
 class ConcreteTests : XCTestCase {
     func testSum() {
-        let a: Vector3 = [2, 3, 5]
+        var a: Vector3 = [2, 3, 5]
         let b: Vector3 = [7, 11, 13]
         XCTAssertEqual(a + b, [9, 14, 18])
+        
+        a += [7, 11, 13]
+        XCTAssertEqual(a, [9, 14, 18])
     }
     
     func testDifference() {
-        let a: Vector3 = [2, 3, 5]
+        var a: Vector3 = [2, 3, 5]
         let b: Vector3 = [7, 11, 13]
         XCTAssertEqual(a - b, [-5, -8, -8])
+        
+        a -= [7, 11, 13]
+        XCTAssertEqual(a, [-5, -8, -8])
     }
     
     func testProduct() {
-        let a: Vector3 = [2, 3, 5]
+        var a: Vector3 = [2, 3, 5]
         let k: Double = 7
         XCTAssertEqual(a * k, [14, 21, 35])
         XCTAssertEqual(k * a, [14, 21, 35])
+        
+        a *= 7
+        XCTAssertEqual(a, [14, 21, 35])
     }
     
     func testQuotient() {
-        let a: Vector3 = [2, 3, 5]
+        var a: Vector3 = [2, 3, 5]
         let k: Double = 4
         XCTAssertEqual(a / k, [0.5, 0.75, 1.25])
+        
+        a /= 4
+        XCTAssertEqual(a, [0.5, 0.75, 1.25])
+    }
+    
+    func testPrefixOperators() {
+        let a: Vector4 = [2, -3, 5, -7]
+        XCTAssertEqual(+a, [2, -3, 5, -7])
+        XCTAssertEqual(-a, [-2, 3, -5, 7])
     }
     
     func testLength() {
