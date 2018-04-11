@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0920"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D66A1D7F205674300021C59A"
-               BuildableName = "Swiftor.framework"
-               BlueprintName = "Swiftor-iOS"
-               ReferencedContainer = "container:Swiftor.xcodeproj">
+               BuildableName = "SwiftyVector.framework"
+               BlueprintName = "SwiftyVector-iOS"
+               ReferencedContainer = "container:SwiftyVector.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -34,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D66A1D88205674300021C59A"
-               BuildableName = "SwiftorTests.xctest"
-               BlueprintName = "SwiftorTests-iOS"
-               ReferencedContainer = "container:Swiftor.xcodeproj">
+               BuildableName = "SwiftyVectorTests.xctest"
+               BlueprintName = "SwiftyVectorTests-iOS"
+               ReferencedContainer = "container:SwiftyVector.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D66A1D7F205674300021C59A"
-            BuildableName = "Swiftor.framework"
-            BlueprintName = "Swiftor-iOS"
-            ReferencedContainer = "container:Swiftor.xcodeproj">
+            BuildableName = "SwiftyVector.framework"
+            BlueprintName = "SwiftyVector-iOS"
+            ReferencedContainer = "container:SwiftyVector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,7 +55,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -67,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D66A1D7F205674300021C59A"
-            BuildableName = "Swiftor.framework"
-            BlueprintName = "Swiftor-iOS"
-            ReferencedContainer = "container:Swiftor.xcodeproj">
+            BuildableName = "SwiftyVector.framework"
+            BlueprintName = "SwiftyVector-iOS"
+            ReferencedContainer = "container:SwiftyVector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -85,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D66A1D7F205674300021C59A"
-            BuildableName = "Swiftor.framework"
-            BlueprintName = "Swiftor-iOS"
-            ReferencedContainer = "container:Swiftor.xcodeproj">
+            BuildableName = "SwiftyVector.framework"
+            BlueprintName = "SwiftyVector-iOS"
+            ReferencedContainer = "container:SwiftyVector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
