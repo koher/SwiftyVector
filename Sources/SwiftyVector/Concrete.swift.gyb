@@ -180,6 +180,27 @@ extension Vector${dimension}${symbol} {
     }
 }
 
+extension Vector${dimension}${symbol}: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.unkeyedContainer()
+%     for element in elements:
+        try container.encode(${element})
+%     end
+    }
+}
+
+extension Vector${dimension}${symbol}: Decodable {
+    public init(from decoder: Decoder) throws {
+        var container = try decoder.unkeyedContainer()
+        self.init(
+%     for i, element in enumerate(elements):
+%       has_comma = i < len(elements) - 1
+            ${element}: try container.decode(${scalar_type}.self)${',' if has_comma else ''}
+%     end
+        )
+    }
+}
+
 extension Vector${dimension}${symbol}: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: ${scalar_type}...) {
         precondition(elements.count == ${dimension})

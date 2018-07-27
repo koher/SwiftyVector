@@ -83,4 +83,22 @@ class ConcreteTests : XCTestCase {
         XCTAssertEqual(a.cos(from: b), sqrt(3) / 2, accuracy: epsilon)
         XCTAssertEqual(a.angle(from: b), .pi / 6, accuracy: epsilon)
     }
+    
+    func testCodable() {
+        do {
+            let original: Vector2 = [2, 3]
+            let encoded = try JSONEncoder().encode(original)
+            let decoded = try JSONDecoder().decode(Vector2.self, from: encoded)
+            XCTAssertEqual(decoded, original)
+        } catch let error {
+            XCTFail("\(error)")
+        }
+        
+        do {
+            let decoded = try JSONDecoder().decode(Vector2.self, from: "[2, 3]".data(using: .utf8)!)
+            XCTAssertEqual(decoded, [2, 3])
+        } catch let error {
+            XCTFail("\(error)")
+        }
+    }
 }

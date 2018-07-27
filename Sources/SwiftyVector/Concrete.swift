@@ -129,6 +129,24 @@ extension Vector2f {
     }
 }
 
+extension Vector2f: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.unkeyedContainer()
+        try container.encode(x)
+        try container.encode(y)
+    }
+}
+
+extension Vector2f: Decodable {
+    public init(from decoder: Decoder) throws {
+        var container = try decoder.unkeyedContainer()
+        self.init(
+            x: try container.decode(Float.self),
+            y: try container.decode(Float.self)
+        )
+    }
+}
+
 extension Vector2f: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: Float...) {
         precondition(elements.count == 2)
@@ -264,6 +282,24 @@ extension Vector2 {
     
     public var debugDescription: String {
         return "[\(x.debugDescription), \(y.debugDescription)]"
+    }
+}
+
+extension Vector2: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.unkeyedContainer()
+        try container.encode(x)
+        try container.encode(y)
+    }
+}
+
+extension Vector2: Decodable {
+    public init(from decoder: Decoder) throws {
+        var container = try decoder.unkeyedContainer()
+        self.init(
+            x: try container.decode(Double.self),
+            y: try container.decode(Double.self)
+        )
     }
 }
 
@@ -430,6 +466,26 @@ extension Vector3f {
     }
 }
 
+extension Vector3f: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.unkeyedContainer()
+        try container.encode(x)
+        try container.encode(y)
+        try container.encode(z)
+    }
+}
+
+extension Vector3f: Decodable {
+    public init(from decoder: Decoder) throws {
+        var container = try decoder.unkeyedContainer()
+        self.init(
+            x: try container.decode(Float.self),
+            y: try container.decode(Float.self),
+            z: try container.decode(Float.self)
+        )
+    }
+}
+
 extension Vector3f: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: Float...) {
         precondition(elements.count == 3)
@@ -591,6 +647,26 @@ extension Vector3 {
     
     public var debugDescription: String {
         return "[\(x.debugDescription), \(y.debugDescription), \(z.debugDescription)]"
+    }
+}
+
+extension Vector3: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.unkeyedContainer()
+        try container.encode(x)
+        try container.encode(y)
+        try container.encode(z)
+    }
+}
+
+extension Vector3: Decodable {
+    public init(from decoder: Decoder) throws {
+        var container = try decoder.unkeyedContainer()
+        self.init(
+            x: try container.decode(Double.self),
+            y: try container.decode(Double.self),
+            z: try container.decode(Double.self)
+        )
     }
 }
 
@@ -767,6 +843,28 @@ extension Vector4f {
     }
 }
 
+extension Vector4f: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.unkeyedContainer()
+        try container.encode(x)
+        try container.encode(y)
+        try container.encode(z)
+        try container.encode(w)
+    }
+}
+
+extension Vector4f: Decodable {
+    public init(from decoder: Decoder) throws {
+        var container = try decoder.unkeyedContainer()
+        self.init(
+            x: try container.decode(Float.self),
+            y: try container.decode(Float.self),
+            z: try container.decode(Float.self),
+            w: try container.decode(Float.self)
+        )
+    }
+}
+
 extension Vector4f: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: Float...) {
         precondition(elements.count == 4)
@@ -938,6 +1036,28 @@ extension Vector4 {
     
     public var debugDescription: String {
         return "[\(x.debugDescription), \(y.debugDescription), \(z.debugDescription), \(w.debugDescription)]"
+    }
+}
+
+extension Vector4: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.unkeyedContainer()
+        try container.encode(x)
+        try container.encode(y)
+        try container.encode(z)
+        try container.encode(w)
+    }
+}
+
+extension Vector4: Decodable {
+    public init(from decoder: Decoder) throws {
+        var container = try decoder.unkeyedContainer()
+        self.init(
+            x: try container.decode(Double.self),
+            y: try container.decode(Double.self),
+            z: try container.decode(Double.self),
+            w: try container.decode(Double.self)
+        )
     }
 }
 
