@@ -42,6 +42,19 @@ class SwiftyVectorTests: XCTestCase {
             print(angle)
             print(unit)
         }
+        
+        #if canImport(CoreGraphics)
+        do {
+            // Conversions between vector types and CoreGraphics types
+            let v = Vector2(CGPoint(x: 2.0, y: 3.0))
+            let p = CGPoint(v)
+            
+            XCTAssertEqual(v.x, 2.0)
+            XCTAssertEqual(v.y, 3.0)
+            XCTAssertEqual(p.x, 2.0)
+            XCTAssertEqual(p.y, 3.0)
+        }
+        #endif
     }
 
     static var allTests : [(String, (SwiftyVectorTests) -> () throws -> Void)] {
