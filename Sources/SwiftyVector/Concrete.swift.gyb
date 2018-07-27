@@ -18,9 +18,62 @@
 %     simd_type_prefix = scalar_type_to_simd_type_prefix[scalar_type]
 
 #if canImport(simd)
-public typealias Vector${dimension}${symbol} = ${simd_type_prefix}${dimension}
+public struct Vector${dimension}${symbol}: Vector {
+    fileprivate var vector: ${simd_type_prefix}${dimension}
 
-extension Vector${dimension}${symbol}: Vector {}
+    public init(_ vector: ${simd_type_prefix}${dimension}) {
+        self.vector = vector
+    }
+%     for element in elements:
+
+    public var ${element}: ${scalar_type} {
+        get { return vector.${element} }
+        set { vector.${element} = newValue }
+    }
+%     end
+}
+
+extension ${simd_type_prefix}${dimension} {
+    public init(_ vector: Vector${dimension}${symbol}) {
+        self = vector.vector
+    }
+}
+
+extension Vector${dimension}${symbol} {
+    public init(
+%     for i, element in enumerate(elements):
+%       has_comma = i < len(elements) - 1
+        ${element}: ${scalar_type}${',' if has_comma else ''}
+%     end
+    ) {
+        self.vector = ${simd_type_prefix}${dimension}(
+%     for i, element in enumerate(elements):
+%       has_comma = i < len(elements) - 1
+            ${element}: ${element}${',' if has_comma else ''}
+%     end
+        )
+    }
+
+    public static func +(lhs: Vector${dimension}${symbol}, rhs: Vector${dimension}${symbol}) -> Vector${dimension}${symbol} {
+        return Vector${dimension}${symbol}(lhs.vector + rhs.vector)
+    }
+    
+    public static func -(lhs: Vector${dimension}${symbol}, rhs: Vector${dimension}${symbol}) -> Vector${dimension}${symbol} {
+        return Vector${dimension}${symbol}(lhs.vector - rhs.vector)
+    }
+    
+    public static func *(lhs: Vector${dimension}${symbol}, rhs: ${scalar_type}) -> Vector${dimension}${symbol} {
+        return Vector${dimension}${symbol}(lhs.vector * rhs)
+    }
+    
+    public static func /(lhs: Vector${dimension}${symbol}, rhs: ${scalar_type}) -> Vector${dimension}${symbol} {
+        return Vector${dimension}${symbol}(lhs.vector / rhs)
+    }
+    
+    public static func ==(lhs: Vector${dimension}${symbol}, rhs: Vector${dimension}${symbol}) -> Bool {
+        return lhs.vector == rhs.vector
+    }
+}
 
 #else
 
@@ -30,7 +83,6 @@ public struct Vector${dimension}${symbol}: Vector {
 %     end
     
     public init(
-
 %     for i, element in enumerate(elements):
 %       has_comma = i < len(elements) - 1
         ${element}: ${scalar_type}${',' if has_comma else ''}
@@ -88,19 +140,6 @@ public struct Vector${dimension}${symbol}: Vector {
     }
 }
 
-extension Vector${dimension}${symbol}: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: ${scalar_type}...) {
-        precondition(elements.count == ${dimension})
-        
-        self.init(
-%     for i, element in enumerate(elements):
-%       has_comma = i < len(elements) - 1
-            ${element}: elements[${i}]${',' if has_comma else ''}
-%     end
-        )
-    }
-}
-
 #endif
 
 extension Vector${dimension}${symbol} {
@@ -138,6 +177,19 @@ extension Vector${dimension}${symbol} {
     
     public var debugDescription: String {
         return "[${', '.join(['\(' + element + '.debugDescription)' for element in elements])}]"
+    }
+}
+
+extension Vector${dimension}${symbol}: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: ${scalar_type}...) {
+        precondition(elements.count == ${dimension})
+        
+        self.init(
+%     for i, element in enumerate(elements):
+%       has_comma = i < len(elements) - 1
+            ${element}: elements[${i}]${',' if has_comma else ''}
+%     end
+        )
     }
 }
 %   end

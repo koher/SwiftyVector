@@ -3,9 +3,61 @@
 #endif
 
 #if canImport(simd)
-public typealias Vector2f = vector_float2
+public struct Vector2f: Vector {
+    fileprivate var vector: vector_float2
 
-extension Vector2f: Vector {}
+    public init(_ vector: vector_float2) {
+        self.vector = vector
+    }
+
+    public var x: Float {
+        get { return vector.x }
+        set { vector.x = newValue }
+    }
+
+    public var y: Float {
+        get { return vector.y }
+        set { vector.y = newValue }
+    }
+}
+
+extension vector_float2 {
+    public init(_ vector: Vector2f) {
+        self = vector.vector
+    }
+}
+
+extension Vector2f {
+    public init(
+        x: Float,
+        y: Float
+    ) {
+        self.vector = vector_float2(
+            x: x,
+            y: y
+        )
+    }
+
+    public static func +(lhs: Vector2f, rhs: Vector2f) -> Vector2f {
+        return Vector2f(lhs.vector + rhs.vector)
+    }
+    
+    public static func -(lhs: Vector2f, rhs: Vector2f) -> Vector2f {
+        return Vector2f(lhs.vector - rhs.vector)
+    }
+    
+    public static func *(lhs: Vector2f, rhs: Float) -> Vector2f {
+        return Vector2f(lhs.vector * rhs)
+    }
+    
+    public static func /(lhs: Vector2f, rhs: Float) -> Vector2f {
+        return Vector2f(lhs.vector / rhs)
+    }
+    
+    public static func ==(lhs: Vector2f, rhs: Vector2f) -> Bool {
+        return lhs.vector == rhs.vector
+    }
+}
 
 #else
 
@@ -14,7 +66,6 @@ public struct Vector2f: Vector {
     public var y: Float
     
     public init(
-
         x: Float,
         y: Float
     ) {
@@ -56,17 +107,6 @@ public struct Vector2f: Vector {
     }
 }
 
-extension Vector2f: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: Float...) {
-        precondition(elements.count == 2)
-        
-        self.init(
-            x: elements[0],
-            y: elements[1]
-        )
-    }
-}
-
 #endif
 
 extension Vector2f {
@@ -89,10 +129,73 @@ extension Vector2f {
     }
 }
 
-#if canImport(simd)
-public typealias Vector2 = vector_double2
+extension Vector2f: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: Float...) {
+        precondition(elements.count == 2)
+        
+        self.init(
+            x: elements[0],
+            y: elements[1]
+        )
+    }
+}
 
-extension Vector2: Vector {}
+#if canImport(simd)
+public struct Vector2: Vector {
+    fileprivate var vector: vector_double2
+
+    public init(_ vector: vector_double2) {
+        self.vector = vector
+    }
+
+    public var x: Double {
+        get { return vector.x }
+        set { vector.x = newValue }
+    }
+
+    public var y: Double {
+        get { return vector.y }
+        set { vector.y = newValue }
+    }
+}
+
+extension vector_double2 {
+    public init(_ vector: Vector2) {
+        self = vector.vector
+    }
+}
+
+extension Vector2 {
+    public init(
+        x: Double,
+        y: Double
+    ) {
+        self.vector = vector_double2(
+            x: x,
+            y: y
+        )
+    }
+
+    public static func +(lhs: Vector2, rhs: Vector2) -> Vector2 {
+        return Vector2(lhs.vector + rhs.vector)
+    }
+    
+    public static func -(lhs: Vector2, rhs: Vector2) -> Vector2 {
+        return Vector2(lhs.vector - rhs.vector)
+    }
+    
+    public static func *(lhs: Vector2, rhs: Double) -> Vector2 {
+        return Vector2(lhs.vector * rhs)
+    }
+    
+    public static func /(lhs: Vector2, rhs: Double) -> Vector2 {
+        return Vector2(lhs.vector / rhs)
+    }
+    
+    public static func ==(lhs: Vector2, rhs: Vector2) -> Bool {
+        return lhs.vector == rhs.vector
+    }
+}
 
 #else
 
@@ -101,7 +204,6 @@ public struct Vector2: Vector {
     public var y: Double
     
     public init(
-
         x: Double,
         y: Double
     ) {
@@ -143,17 +245,6 @@ public struct Vector2: Vector {
     }
 }
 
-extension Vector2: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: Double...) {
-        precondition(elements.count == 2)
-        
-        self.init(
-            x: elements[0],
-            y: elements[1]
-        )
-    }
-}
-
 #endif
 
 extension Vector2 {
@@ -176,10 +267,80 @@ extension Vector2 {
     }
 }
 
-#if canImport(simd)
-public typealias Vector3f = vector_float3
+extension Vector2: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: Double...) {
+        precondition(elements.count == 2)
+        
+        self.init(
+            x: elements[0],
+            y: elements[1]
+        )
+    }
+}
 
-extension Vector3f: Vector {}
+#if canImport(simd)
+public struct Vector3f: Vector {
+    fileprivate var vector: vector_float3
+
+    public init(_ vector: vector_float3) {
+        self.vector = vector
+    }
+
+    public var x: Float {
+        get { return vector.x }
+        set { vector.x = newValue }
+    }
+
+    public var y: Float {
+        get { return vector.y }
+        set { vector.y = newValue }
+    }
+
+    public var z: Float {
+        get { return vector.z }
+        set { vector.z = newValue }
+    }
+}
+
+extension vector_float3 {
+    public init(_ vector: Vector3f) {
+        self = vector.vector
+    }
+}
+
+extension Vector3f {
+    public init(
+        x: Float,
+        y: Float,
+        z: Float
+    ) {
+        self.vector = vector_float3(
+            x: x,
+            y: y,
+            z: z
+        )
+    }
+
+    public static func +(lhs: Vector3f, rhs: Vector3f) -> Vector3f {
+        return Vector3f(lhs.vector + rhs.vector)
+    }
+    
+    public static func -(lhs: Vector3f, rhs: Vector3f) -> Vector3f {
+        return Vector3f(lhs.vector - rhs.vector)
+    }
+    
+    public static func *(lhs: Vector3f, rhs: Float) -> Vector3f {
+        return Vector3f(lhs.vector * rhs)
+    }
+    
+    public static func /(lhs: Vector3f, rhs: Float) -> Vector3f {
+        return Vector3f(lhs.vector / rhs)
+    }
+    
+    public static func ==(lhs: Vector3f, rhs: Vector3f) -> Bool {
+        return lhs.vector == rhs.vector
+    }
+}
 
 #else
 
@@ -189,7 +350,6 @@ public struct Vector3f: Vector {
     public var z: Float
     
     public init(
-
         x: Float,
         y: Float,
         z: Float
@@ -238,18 +398,6 @@ public struct Vector3f: Vector {
     }
 }
 
-extension Vector3f: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: Float...) {
-        precondition(elements.count == 3)
-        
-        self.init(
-            x: elements[0],
-            y: elements[1],
-            z: elements[2]
-        )
-    }
-}
-
 #endif
 
 extension Vector3f {
@@ -282,10 +430,81 @@ extension Vector3f {
     }
 }
 
-#if canImport(simd)
-public typealias Vector3 = vector_double3
+extension Vector3f: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: Float...) {
+        precondition(elements.count == 3)
+        
+        self.init(
+            x: elements[0],
+            y: elements[1],
+            z: elements[2]
+        )
+    }
+}
 
-extension Vector3: Vector {}
+#if canImport(simd)
+public struct Vector3: Vector {
+    fileprivate var vector: vector_double3
+
+    public init(_ vector: vector_double3) {
+        self.vector = vector
+    }
+
+    public var x: Double {
+        get { return vector.x }
+        set { vector.x = newValue }
+    }
+
+    public var y: Double {
+        get { return vector.y }
+        set { vector.y = newValue }
+    }
+
+    public var z: Double {
+        get { return vector.z }
+        set { vector.z = newValue }
+    }
+}
+
+extension vector_double3 {
+    public init(_ vector: Vector3) {
+        self = vector.vector
+    }
+}
+
+extension Vector3 {
+    public init(
+        x: Double,
+        y: Double,
+        z: Double
+    ) {
+        self.vector = vector_double3(
+            x: x,
+            y: y,
+            z: z
+        )
+    }
+
+    public static func +(lhs: Vector3, rhs: Vector3) -> Vector3 {
+        return Vector3(lhs.vector + rhs.vector)
+    }
+    
+    public static func -(lhs: Vector3, rhs: Vector3) -> Vector3 {
+        return Vector3(lhs.vector - rhs.vector)
+    }
+    
+    public static func *(lhs: Vector3, rhs: Double) -> Vector3 {
+        return Vector3(lhs.vector * rhs)
+    }
+    
+    public static func /(lhs: Vector3, rhs: Double) -> Vector3 {
+        return Vector3(lhs.vector / rhs)
+    }
+    
+    public static func ==(lhs: Vector3, rhs: Vector3) -> Bool {
+        return lhs.vector == rhs.vector
+    }
+}
 
 #else
 
@@ -295,7 +514,6 @@ public struct Vector3: Vector {
     public var z: Double
     
     public init(
-
         x: Double,
         y: Double,
         z: Double
@@ -344,18 +562,6 @@ public struct Vector3: Vector {
     }
 }
 
-extension Vector3: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: Double...) {
-        precondition(elements.count == 3)
-        
-        self.init(
-            x: elements[0],
-            y: elements[1],
-            z: elements[2]
-        )
-    }
-}
-
 #endif
 
 extension Vector3 {
@@ -388,10 +594,88 @@ extension Vector3 {
     }
 }
 
-#if canImport(simd)
-public typealias Vector4f = vector_float4
+extension Vector3: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: Double...) {
+        precondition(elements.count == 3)
+        
+        self.init(
+            x: elements[0],
+            y: elements[1],
+            z: elements[2]
+        )
+    }
+}
 
-extension Vector4f: Vector {}
+#if canImport(simd)
+public struct Vector4f: Vector {
+    fileprivate var vector: vector_float4
+
+    public init(_ vector: vector_float4) {
+        self.vector = vector
+    }
+
+    public var x: Float {
+        get { return vector.x }
+        set { vector.x = newValue }
+    }
+
+    public var y: Float {
+        get { return vector.y }
+        set { vector.y = newValue }
+    }
+
+    public var z: Float {
+        get { return vector.z }
+        set { vector.z = newValue }
+    }
+
+    public var w: Float {
+        get { return vector.w }
+        set { vector.w = newValue }
+    }
+}
+
+extension vector_float4 {
+    public init(_ vector: Vector4f) {
+        self = vector.vector
+    }
+}
+
+extension Vector4f {
+    public init(
+        x: Float,
+        y: Float,
+        z: Float,
+        w: Float
+    ) {
+        self.vector = vector_float4(
+            x: x,
+            y: y,
+            z: z,
+            w: w
+        )
+    }
+
+    public static func +(lhs: Vector4f, rhs: Vector4f) -> Vector4f {
+        return Vector4f(lhs.vector + rhs.vector)
+    }
+    
+    public static func -(lhs: Vector4f, rhs: Vector4f) -> Vector4f {
+        return Vector4f(lhs.vector - rhs.vector)
+    }
+    
+    public static func *(lhs: Vector4f, rhs: Float) -> Vector4f {
+        return Vector4f(lhs.vector * rhs)
+    }
+    
+    public static func /(lhs: Vector4f, rhs: Float) -> Vector4f {
+        return Vector4f(lhs.vector / rhs)
+    }
+    
+    public static func ==(lhs: Vector4f, rhs: Vector4f) -> Bool {
+        return lhs.vector == rhs.vector
+    }
+}
 
 #else
 
@@ -402,7 +686,6 @@ public struct Vector4f: Vector {
     public var w: Float
     
     public init(
-
         x: Float,
         y: Float,
         z: Float,
@@ -458,19 +741,6 @@ public struct Vector4f: Vector {
     }
 }
 
-extension Vector4f: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: Float...) {
-        precondition(elements.count == 4)
-        
-        self.init(
-            x: elements[0],
-            y: elements[1],
-            z: elements[2],
-            w: elements[3]
-        )
-    }
-}
-
 #endif
 
 extension Vector4f {
@@ -497,10 +767,89 @@ extension Vector4f {
     }
 }
 
-#if canImport(simd)
-public typealias Vector4 = vector_double4
+extension Vector4f: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: Float...) {
+        precondition(elements.count == 4)
+        
+        self.init(
+            x: elements[0],
+            y: elements[1],
+            z: elements[2],
+            w: elements[3]
+        )
+    }
+}
 
-extension Vector4: Vector {}
+#if canImport(simd)
+public struct Vector4: Vector {
+    fileprivate var vector: vector_double4
+
+    public init(_ vector: vector_double4) {
+        self.vector = vector
+    }
+
+    public var x: Double {
+        get { return vector.x }
+        set { vector.x = newValue }
+    }
+
+    public var y: Double {
+        get { return vector.y }
+        set { vector.y = newValue }
+    }
+
+    public var z: Double {
+        get { return vector.z }
+        set { vector.z = newValue }
+    }
+
+    public var w: Double {
+        get { return vector.w }
+        set { vector.w = newValue }
+    }
+}
+
+extension vector_double4 {
+    public init(_ vector: Vector4) {
+        self = vector.vector
+    }
+}
+
+extension Vector4 {
+    public init(
+        x: Double,
+        y: Double,
+        z: Double,
+        w: Double
+    ) {
+        self.vector = vector_double4(
+            x: x,
+            y: y,
+            z: z,
+            w: w
+        )
+    }
+
+    public static func +(lhs: Vector4, rhs: Vector4) -> Vector4 {
+        return Vector4(lhs.vector + rhs.vector)
+    }
+    
+    public static func -(lhs: Vector4, rhs: Vector4) -> Vector4 {
+        return Vector4(lhs.vector - rhs.vector)
+    }
+    
+    public static func *(lhs: Vector4, rhs: Double) -> Vector4 {
+        return Vector4(lhs.vector * rhs)
+    }
+    
+    public static func /(lhs: Vector4, rhs: Double) -> Vector4 {
+        return Vector4(lhs.vector / rhs)
+    }
+    
+    public static func ==(lhs: Vector4, rhs: Vector4) -> Bool {
+        return lhs.vector == rhs.vector
+    }
+}
 
 #else
 
@@ -511,7 +860,6 @@ public struct Vector4: Vector {
     public var w: Double
     
     public init(
-
         x: Double,
         y: Double,
         z: Double,
@@ -567,19 +915,6 @@ public struct Vector4: Vector {
     }
 }
 
-extension Vector4: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: Double...) {
-        precondition(elements.count == 4)
-        
-        self.init(
-            x: elements[0],
-            y: elements[1],
-            z: elements[2],
-            w: elements[3]
-        )
-    }
-}
-
 #endif
 
 extension Vector4 {
@@ -603,5 +938,18 @@ extension Vector4 {
     
     public var debugDescription: String {
         return "[\(x.debugDescription), \(y.debugDescription), \(z.debugDescription), \(w.debugDescription)]"
+    }
+}
+
+extension Vector4: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: Double...) {
+        precondition(elements.count == 4)
+        
+        self.init(
+            x: elements[0],
+            y: elements[1],
+            z: elements[2],
+            w: elements[3]
+        )
     }
 }
