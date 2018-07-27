@@ -18,7 +18,7 @@ class SwiftyVectorTests: XCTestCase {
             let length     = a.length              // 2.23607
             let distance   = a.distance(from: b)   // 6.08276
             
-            let dotProduct = a.dotProduct(with: b) // 0.0
+            let dotProduct = a.dot(b)              // 0.0
             let angle      = a.angle(from: b)      // 1.5708
             
             let c: Vector3 = [1.0, 2.0, -2.0]

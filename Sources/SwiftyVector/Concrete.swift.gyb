@@ -143,23 +143,23 @@ public struct Vector${dimension}${symbol}: Vector {
 #endif
 
 extension Vector${dimension}${symbol} {
-    public func dotProduct(with v: Vector${dimension}${symbol}) -> ${scalar_type} {
+    public func dot(_ other: Vector${dimension}${symbol}) -> ${scalar_type} {
 %     for i, element in enumerate(elements):
 %       if i == 0:
-        return ${element} * v.${element}
+        return ${element} * other.${element}
 %       else:
-            + ${element} * v.${element}
+            + ${element} * other.${element}
 %       end
 %     end
     }
 %
 %     if dimension == '3':
 
-    public func crossProduct(with v: Vector3${symbol}) -> Vector3${symbol} {
+    public func cross(_ other: Vector3${symbol}) -> Vector3${symbol} {
         return Vector3${symbol}(
-            x: y * v.z - z * v.y,
-            y: z * v.x - x * v.z,
-            z: x * v.y - y * v.x
+            x: y * other.z - z * other.y,
+            y: z * other.x - x * other.z,
+            z: x * other.y - y * other.x
         )
     }
 %     end

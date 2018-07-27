@@ -110,9 +110,9 @@ public struct Vector2f: Vector {
 #endif
 
 extension Vector2f {
-    public func dotProduct(with v: Vector2f) -> Float {
-        return x * v.x
-            + y * v.y
+    public func dot(_ other: Vector2f) -> Float {
+        return x * other.x
+            + y * other.y
     }
     
     public static let zero: Vector2f = Vector2f(
@@ -248,9 +248,9 @@ public struct Vector2: Vector {
 #endif
 
 extension Vector2 {
-    public func dotProduct(with v: Vector2) -> Double {
-        return x * v.x
-            + y * v.y
+    public func dot(_ other: Vector2) -> Double {
+        return x * other.x
+            + y * other.y
     }
     
     public static let zero: Vector2 = Vector2(
@@ -401,17 +401,17 @@ public struct Vector3f: Vector {
 #endif
 
 extension Vector3f {
-    public func dotProduct(with v: Vector3f) -> Float {
-        return x * v.x
-            + y * v.y
-            + z * v.z
+    public func dot(_ other: Vector3f) -> Float {
+        return x * other.x
+            + y * other.y
+            + z * other.z
     }
 
-    public func crossProduct(with v: Vector3f) -> Vector3f {
+    public func cross(_ other: Vector3f) -> Vector3f {
         return Vector3f(
-            x: y * v.z - z * v.y,
-            y: z * v.x - x * v.z,
-            z: x * v.y - y * v.x
+            x: y * other.z - z * other.y,
+            y: z * other.x - x * other.z,
+            z: x * other.y - y * other.x
         )
     }
     
@@ -565,17 +565,17 @@ public struct Vector3: Vector {
 #endif
 
 extension Vector3 {
-    public func dotProduct(with v: Vector3) -> Double {
-        return x * v.x
-            + y * v.y
-            + z * v.z
+    public func dot(_ other: Vector3) -> Double {
+        return x * other.x
+            + y * other.y
+            + z * other.z
     }
 
-    public func crossProduct(with v: Vector3) -> Vector3 {
+    public func cross(_ other: Vector3) -> Vector3 {
         return Vector3(
-            x: y * v.z - z * v.y,
-            y: z * v.x - x * v.z,
-            z: x * v.y - y * v.x
+            x: y * other.z - z * other.y,
+            y: z * other.x - x * other.z,
+            z: x * other.y - y * other.x
         )
     }
     
@@ -744,11 +744,11 @@ public struct Vector4f: Vector {
 #endif
 
 extension Vector4f {
-    public func dotProduct(with v: Vector4f) -> Float {
-        return x * v.x
-            + y * v.y
-            + z * v.z
-            + w * v.w
+    public func dot(_ other: Vector4f) -> Float {
+        return x * other.x
+            + y * other.y
+            + z * other.z
+            + w * other.w
     }
     
     public static let zero: Vector4f = Vector4f(
@@ -918,11 +918,11 @@ public struct Vector4: Vector {
 #endif
 
 extension Vector4 {
-    public func dotProduct(with v: Vector4) -> Double {
-        return x * v.x
-            + y * v.y
-            + z * v.z
-            + w * v.w
+    public func dot(_ other: Vector4) -> Double {
+        return x * other.x
+            + y * other.y
+            + z * other.z
+            + w * other.w
     }
     
     public static let zero: Vector4 = Vector4(

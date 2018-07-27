@@ -65,16 +65,16 @@ class ConcreteTests : XCTestCase {
         XCTAssertEqual(a.unit, [1 / sqrt(14), 2 / sqrt(14), 3 / sqrt(14)], accuracy: epsilon)
     }
     
-    func testDotProduct() {
+    func testDot() {
         let a: Vector3 = [2, 3, 5]
         let b: Vector3 = [7, 11, 13]
-        XCTAssertEqual(a.dotProduct(with: b), 112)
+        XCTAssertEqual(a.dot(b), 112)
     }
     
-    func testCrossProduct() {
+    func testCross() {
         let a: Vector3 = [2, 3, 5]
         let b: Vector3 = [7, 11, 13]
-        XCTAssertEqual(a.crossProduct(with: b), [-16, 9, 1])
+        XCTAssertEqual(a.cross(b), [-16, 9, 1])
     }
     
     func testAngle() {
