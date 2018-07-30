@@ -24,7 +24,7 @@ public protocol Vector: Equatable, CustomStringConvertible, CustomDebugStringCon
     
     var unit: Self { get }
     
-    func dotProduct(with: Self) -> Scalar
+    func dot(_: Self) -> Scalar
 
     func cos(from: Self) -> Scalar
     func angle(from: Self) -> Scalar
@@ -62,7 +62,7 @@ extension Vector where Scalar : FloatingPoint {
     }
 
     public var squareLength: Scalar {
-        return dotProduct(with: self)
+        return dot(self)
     }
     
     public var length: Scalar {
@@ -82,7 +82,7 @@ extension Vector where Scalar : FloatingPoint {
     }
     
     public func cos(from v: Self) -> Scalar {
-        return dotProduct(with: v) / sqrt(squareLength * v.squareLength)
+        return dot(v) / sqrt(squareLength * v.squareLength)
     }
 }
 
